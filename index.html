@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Page</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Tell us what you think of Ultra Instinct Complete!</p>
+        <form id="survey-form">
+            <div>
+                <input type="text" id="name" placeholder="First Name" required>
+                <label id="name-label" for="name"><span class="required">*</span>Name</label>
+            </div>
+            <div>
+                <input type="email" id="email" placeholder="john.doe@example.com" required>
+                <label id="email-label" for="email"><span class="required">*</span>E-Mail</label>
+            </div>
+            <div>
+                <input type="number" id="number" placeholder="Age" min="5" max="105" required>
+                <label id="number-label" for="number"><span class="required">*</span>Age</label>
+            </div>
+            <div>
+                <select id="dropdown">
+                    <option value="never-watched">Never watched.</option>
+                    <option value="partly-watched">I've seen some, not caught up though.</option>
+                    <option value="watched">Yes! I'm all caught up and can't wait for the finale!</option>
+                </select>
+                <p id="dropdown-question">Have you watched Dragon Ball Super?</p>
+            </div>
+
+            <p id="radio-question">Which Dragon Ball transformation excited you the most?</p>
+            <div id="radio">
+                <div>
+                    <label for="ss1">Super Sayan 1</label>
+                    <input id="ss1" type="radio" name="ssj-ultra" value="ssj1">
+                </div>
+                <div>
+                    <label for="ss2">Super Sayan 2</label>
+                    <input id="ss2" type="radio" name="ssj-ultra" value="ssj2">
+                </div>
+                <div>
+                    <label for="ss3">Super Sayan 3</label>
+                    <input id="ss3" type="radio" name="ssj-ultra" value="ssj3">
+                </div>
+                <div>
+                    <label for="ssg">Super Sayan God</label>
+                    <input id="ssg" type="radio" name="ssj-ultra" value="ssg">
+                </div>
+                <div>
+                    <label for="ssb">Super Sayan Blue</label>
+                    <input id="ssb" type="radio" name="ssj-ultra" value="ssb">
+                </div>
+                <div>
+                    <label for="ss4">Super Sayan 4</label>
+                    <input id="ss4" type="radio" name="ssj-ultra" value="ss4">
+                </div>
+                <div>
+                    <label for="ui">Ultra Instinct</label>
+                    <input id="ui" type="radio" name="ssj-ultra" value="ui">
+                </div>
+            </div>
+            
+            <p id="checkbox-question">Which Sayan do you want to see power up next?</p>
+            <div id="checkbox">
+                <div>
+                    <label>Gohan</label>
+                    <input type="checkbox" value="Gohan">
+                </div>
+                <div>
+                    <label>Vegeta</label>
+                    <input type="checkbox" name="ssj-ultra" value="Vegeta">
+                </div>
+                <div>
+                    <label>Raditz(?!)</label>
+                    <input type="checkbox" name="ssj-ultra" value="Raditz">
+                </div>
+                <div>
+                    <label>Cabba</label>
+                    <input type="checkbox" name="ssj-ultra" value="Cabba">
+                </div>
+                <div>
+                    <label>Caulifla</label>
+                    <input type="checkbox" name="ssj-ultra" value="Caulifla">
+                </div>
+                <div>
+                    <label>Kefla</label>
+                    <input type="checkbox" name="ssj-ultra" value="Kefla">
+                </div>
+            </div>
+            
+            <div id="comment">
+                <label for="comment-box">Comments/Opinions:</label>
+                <textarea id="comment-box" rows="6" cols="50px" maxlength="500" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <span id="button"><button id="submit">Submit</button></span>
+        </form>
+    </main>
+</body>
+</html>
